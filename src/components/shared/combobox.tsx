@@ -17,7 +17,6 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/ui/popover";
-import { IComboboxData } from "@/types";
 import { ScrollArea } from "../ui/scroll-area";
 
 export function Combobox({
