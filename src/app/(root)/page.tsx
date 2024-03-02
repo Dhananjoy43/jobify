@@ -11,8 +11,8 @@ export default function Home() {
                     </h1>
                     <p className="font-medium text-primary mt-6">
                         The ultimate destination for job seekers and employers
-                        alike. Whether you're on the hunt for your dream job or
-                        seeking talented individuals to join your team.
+                        alike. Whether you&apos;re on the hunt for your dream
+                        job or seeking talented individuals to join your team.
                     </p>
                     <JobSearch />
                 </div>
