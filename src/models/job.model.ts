@@ -50,6 +50,6 @@ const JobSchema = new Schema({
     timestamps: true
 });
 
-const Job = models?.Job || model("Job", JobSchema);
+const Job = models?.jobs || model("Job", JobSchema);
 
 export default Job;
