@@ -4,7 +4,7 @@ import MobileMenu from "@/components/shared/mobile-menu";
 
 export const Navbar = async () => {
     return (
-        <header>
+        <header className="sticky top-0">
             <Menu />
             <MobileMenu />
         </header>

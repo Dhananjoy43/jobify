@@ -1,10 +1,12 @@
 import { JobSearch } from "@/components/shared/job-search";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center py-3 px-6 lg:px-40">
-            <section className="w-full flex flex-col-reverse md:flex-row items-center md:justify-between gap-10">
+        <div className="flex flex-col items-center justify-center py-3 px-6 lg:px-40">
+            <section className="h-[70vh] w-full flex flex-col-reverse md:flex-row items-center md:justify-between gap-10">
                 <div className="flex flex-col w-full md:w-2/3">
                     <h1 className="text-3xl lg:text-6xl font-extrabold ">
                         Find your dream job on Jobify
@@ -25,6 +27,18 @@ export default function Home() {
                     />
                 </div>
             </section>
+            <section className="flex flex-col items-center justify-center mb-10">
+                <h2 className="text-3xl font-bold">
+                    Want to hire for your company?
+                </h2>
+                <p>
+                    Post a job on Jobify and get resumes from top talent in
+                    India.
+                </p>
+                <Button className="mt-3" size={"lg"} asChild>
+                    <Link href="/jobs/new">Post a new job</Link>
+                </Button>
+            </section>
 
             {/* Sponsers */}
             <section className="w-full flex items-center justify-between">
@@ -38,19 +52,19 @@ export default function Home() {
                     src={"/images/Binance.svg"}
                     width={150}
                     height={80}
-                    alt="airbnb logo"
+                    alt="binance logo"
                 />
                 <Image
                     src={"/images/Coinbase.svg"}
                     width={150}
                     height={80}
-                    alt="airbnb logo"
+                    alt="coinbase logo"
                 />
                 <Image
                     src={"/images/Dropbox.svg"}
                     width={150}
                     height={80}
-                    alt="airbnb logo"
+                    alt="dropbox logo"
                 />
             </section>
         </div>

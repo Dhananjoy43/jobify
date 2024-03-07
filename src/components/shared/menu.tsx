@@ -8,7 +8,7 @@ import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 const Menu = () => {
     return (
-        <nav className="fixed top-0 w-full hidden md:flex items-center justify-between border-b shadow-md leading-10 py-3 px-6 lg:px-40 z-50 bg-muted">
+        <nav className="w-full hidden md:flex items-center justify-between border-b shadow-md leading-10 py-3 px-6 lg:px-40 z-50 bg-muted">
             <div>
                 <Link
                     href={"/"}

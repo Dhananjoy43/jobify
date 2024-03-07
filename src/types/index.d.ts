@@ -1,6 +1,6 @@
 declare type IComboboxData = {
     value: string,
-    label: string
+    label: string,
 }
 
 declare type CreateUserParams = {

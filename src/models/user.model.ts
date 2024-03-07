@@ -26,6 +26,8 @@ const UserSchema = new Schema({
     lastName: {
         type: String,
     },
+}, {
+    timestamps: true,
 });
 
 const User = models?.User || model("User", UserSchema);

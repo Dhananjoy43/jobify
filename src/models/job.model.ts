@@ -34,7 +34,7 @@ const JobSchema = new Schema({
         type: Number,
         required: true
     },
-    joining: {
+    deadline: {
         type: Date,
         required: true
     },
@@ -44,7 +44,7 @@ const JobSchema = new Schema({
     },
     postedAt: {
         type: Date,
-        default: Date.now
+        default: Date.now()
     }
 }, {
     timestamps: true

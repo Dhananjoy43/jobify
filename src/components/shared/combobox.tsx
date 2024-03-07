@@ -26,6 +26,7 @@ export function Combobox({
 }: {
     title: string;
     className?: string;
+    defaultValue?: string | undefined;
     data: IComboboxData[];
 }) {
     const [open, setOpen] = React.useState(false);
