@@ -40,16 +40,12 @@ const JobSchema = new Schema({
     },
     postedBy: {
         type: Schema.Types.ObjectId,
-        ref: "User"
-    },
-    postedAt: {
-        type: Date,
-        default: Date.now()
+        ref: 'User'
     }
 }, {
     timestamps: true
 });
 
-const Job = models?.jobs || model("Job", JobSchema);
+const Job = models?.Job || model("Job", JobSchema);
 
 export default Job;
